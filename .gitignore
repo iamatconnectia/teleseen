@@ -1,0 +1,86 @@
+# Flutter build files
+.buildlog
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Dart pub cache (optional)
+.pub-cache/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+android/captures/
+android/app/*.keystore
+android/app/*.jks
+
+# iOS
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Flutter/Flutter.framework/
+ios/Flutter/ephemeral/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Xcode
+*.xcworkspace
+*.xcuserdata
+*.xcuserdatad
+*.xcuserstate
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Flutter/Flutter.framework/
+macos/Flutter/Flutter.podspec
+macos/Pods/
+macos/Runner.xcworkspace/
+
+# Windows
+windows/flutter/
+windows/CMakeLists.txt.user
+
+# Web
+.flutter-plugins
+
+# Local environment
+.env
+*.env
+env.props
+local.properties
+key.properties
+secret.properties
+*.keystore
+*.jks
+
+# Generated logs and temporary files
+analyze_output*.txt
+build_release_attempt*.txt
+build_release_final*.txt
+build_verbose.txt
+outdated.txt
+hs_err_pid*.log
+*.tmp
+*.swp
+*.lock
+
+# macOS file metadata
+.DS_Store
+
+# Optional generated files
+.packages

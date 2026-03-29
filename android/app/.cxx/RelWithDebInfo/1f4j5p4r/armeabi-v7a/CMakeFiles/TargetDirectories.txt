@@ -1,0 +1,2 @@
+D:/Connectia Technology/teleseen/android/app/.cxx/RelWithDebInfo/1f4j5p4r/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Connectia Technology/teleseen/android/app/.cxx/RelWithDebInfo/1f4j5p4r/armeabi-v7a/CMakeFiles/rebuild_cache.dir

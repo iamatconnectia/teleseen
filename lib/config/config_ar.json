@@ -1,0 +1,589 @@
+{
+    "HorizonLayout": [
+        {
+            "image": "assets/images/app_icon_transparent.png",
+            "layout": "logo",
+            "opacity": 1,
+            "iconSize": 24,
+            "logoSize": 50,
+            "menuIcon": {
+                "name": "text_justifyleft",
+                "fontFamily": "CupertinoIcons"
+            },
+            "showCart": false,
+            "showLogo": true,
+            "showMenu": true,
+            "iconRadius": 6,
+            "showSearch": true,
+            "iconOpacity": 0,
+            "showBadgeCart": false,
+            "iconSpreadRadius": 0,
+            "showNotification": false
+        },
+        {
+            "fit": "cover",
+            "items": [
+                {
+                    "key": "geCfcBtTRV",
+                    "type": "image",
+                    "image": "https://ktskw.com/wp-content/uploads/2025/06/gj.jpg",
+                    "video": "",
+                    "product": "3925",
+                    "products": [],
+                    "productLength": 3,
+                    "showSubcategory": false,
+                    "bannerWithProduct": false,
+                    "defaultShowProduct": false
+                }
+            ],
+            "design": "static",
+            "layout": "bannerImage",
+            "radius": 0,
+            "padding": 0,
+            "parallax": false,
+            "marginTop": 0,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "isHorizontal": false,
+            "marginBottom": 0,
+            "numberPadding": {
+                "end": 0,
+                "top": 15,
+                "start": 0,
+                "bottom": 0
+            },
+            "numberAlignment": {
+                "value": "topEnd"
+            },
+            "enableBackground": false,
+            "indicatorPadding": {
+                "end": 0,
+                "top": 0,
+                "start": 0,
+                "bottom": 12
+            },
+            "indicatorAlignment": {
+                "value": "bottomCenter"
+            },
+            "parallaxImageRatio": 1.2
+        },
+        {
+            "fit": "fill",
+            "items": [
+                {
+                    "key": "RKsanIDPnx",
+                    "type": "image",
+                    "image": "assets/images/treadmill.png",
+                    "video": "",
+                    "padding": 5,
+                    "product": "3931",
+                    "products": [],
+                    "productLength": 3,
+                    "showSubcategory": false,
+                    "bannerWithProduct": true,
+                    "defaultShowProduct": false
+                },
+                {
+                    "key": "utkrGQHLhj",
+                    "type": "image",
+                    "image": "assets/images/exercise_bike.png",
+                    "video": "",
+                    "padding": 5,
+                    "product": "3953",
+                    "products": [],
+                    "productLength": 3,
+                    "showSubcategory": false,
+                    "bannerWithProduct": true,
+                    "defaultShowProduct": false
+                }
+            ],
+            "design": "static",
+            "height": 0.25,
+            "layout": "bannerImage",
+            "radius": 6,
+            "padding": 0,
+            "parallax": false,
+            "marginTop": 10,
+            "marginLeft": 10,
+            "marginRight": 10,
+            "isHorizontal": false,
+            "marginBottom": 12,
+            "numberPadding": {
+                "end": 0,
+                "top": 15,
+                "start": 0,
+                "bottom": 0
+            },
+            "numberAlignment": {
+                "value": "topEnd"
+            },
+            "enableBackground": false,
+            "indicatorPadding": {
+                "end": 0,
+                "top": 0,
+                "start": 0,
+                "bottom": 12
+            },
+            "indicatorAlignment": {
+                "value": "bottomCenter"
+            },
+            "parallaxImageRatio": 1.2
+        },
+        {
+            "fit": "fill",
+            "items": [
+                {
+                    "key": "CGaXWGntef",
+                    "name": "FITNESS",
+                    "type": "image",
+                    "image": "assets/images/rower.png",
+                    "video": "",
+                    "product": "3959",
+                    "products": [],
+                    "productLength": 3,
+                    "showSubcategory": false,
+                    "bannerWithProduct": false,
+                    "defaultShowProduct": false
+                }
+            ],
+            "design": "default",
+            "isBlur": false,
+            "layout": "bannerImage",
+            "radius": 0,
+            "padding": 14.7,
+            "autoPlay": true,
+            "isSlider": true,
+            "parallax": false,
+            "upHeight": 0,
+            "isSoundOn": false,
+            "marginTop": 0,
+            "marginLeft": 0,
+            "showNumber": false,
+            "marginRight": 0,
+            "intervalTime": 10,
+            "isHorizontal": false,
+            "marginBottom": 0,
+            "autoPlayVideo": false,
+            "numberPadding": {
+                "end": 0,
+                "top": 15,
+                "start": 0,
+                "bottom": 0
+            },
+            "showIndicator": true,
+            "showBackground": false,
+            "numberAlignment": {
+                "value": "topEnd"
+            },
+            "enableBackground": false,
+            "indicatorPadding": {
+                "end": 0,
+                "top": 0,
+                "start": 0,
+                "bottom": 12
+            },
+            "pageIndicatorType": "line",
+            "indicatorAlignment": {
+                "value": "bottomCenter"
+            },
+            "parallaxImageRatio": 1.2,
+            "enableTimeIndicator": true,
+            "doubleTapToFullScreen": false
+        },
+        {
+            "name": "Popular Product",
+            "rows": 1,
+            "layout": "threeColumn",
+            "onSale": false,
+            "columns": 0,
+            "hMargin": 6,
+            "useSort": false,
+            "vMargin": 0,
+            "featured": false,
+            "hPadding": 0,
+            "parallax": false,
+            "vPadding": 0,
+            "hidePrice": false,
+            "hideStore": false,
+            "hideTitle": false,
+            "showHeart": false,
+            "cardDesign": "card",
+            "imageRatio": 1.2,
+            "isSnapping": false,
+            "imageBoxfit": "fill",
+            "borderRadius": 3,
+            "enableRating": true,
+            "showCartIcon": true,
+            "showCategory": false,
+            "showQuantity": false,
+            "showCountDown": false,
+            "showOnlyImage": false,
+            "advancedParams": {},
+            "cartIconRadius": 9,
+            "showCartButton": false,
+            "showStockStatus": true,
+            "backgroundRadius": 10,
+            "enableAutoSliding": false,
+            "showCartIconColor": false,
+            "useCircularRadius": true,
+            "parallaxImageRatio": 1.2,
+            "enableBottomAddToCart": false,
+            "productListItemHeight": 254,
+            "hideEmptyProductLayout": false,
+            "hideEmptyProductListRating": false,
+            "showCartButtonWithQuantity": false
+        }
+    ],
+    "configChat": {
+        "EnableSmartChat": true,
+        "showOnScreens": [
+            "profile"
+        ],
+        "hideOnScreens": [
+            "home",
+            "category",
+            "search",
+            "cart",
+            "products",
+            "product",
+            "wishlist",
+            "blog",
+            "dashboard"
+        ]
+    },
+    "Setting": {
+        "ShowChat": true,
+        "FontFamily": "Afacad",
+        "FontHeader": "AR One Sans",
+        "StickyHeader": true,
+        "TabBarConfig": {
+            "color": null,
+            "enable": true,
+            "iconSize": 24,
+            "boxShadow": {
+                "x": 0,
+                "y": 10,
+                "blurRadius": 10,
+                "colorOpacity": 0.1,
+                "spreadRadius": 10
+            },
+            "colorCart": null,
+            "colorIcon": null,
+            "marginTop": 0,
+            "isSafeArea": true,
+            "marginLeft": 0,
+            "paddingTop": 0,
+            "enableOnTop": false,
+            "lazyLoading": true,
+            "marginRight": 0,
+            "paddingLeft": 0,
+            "marginBottom": 0,
+            "paddingRight": 0,
+            "showFloating": false,
+            "showMinimize": false,
+            "enableDivider": true,
+            "paddingBottom": 0,
+            "radiusTopLeft": 0,
+            "TabBarFloating": {
+                "color": null,
+                "width": 50,
+                "height": 50,
+                "margin": null,
+                "radius": 50,
+                "location": null,
+                "position": 0,
+                "sizeIcon": null,
+                "elevation": 2,
+                "isCoverMode": false,
+                "notchMargin": 4,
+                "floatingType": "circle"
+            },
+            "bottomBarStyle": "slideEffect",
+            "indicatorStyle": "material",
+            "radiusTopRight": 0,
+            "TabBarIndicator": {
+                "color": null,
+                "height": 2,
+                "radius": 18,
+                "strokeWidth": 0,
+                "tabPosition": "bottom",
+                "indicatorSize": "tab",
+                "paintingStyle": "fill",
+                "topLeftRadius": 0,
+                "topRightRadius": 0,
+                "verticalPadding": 0,
+                "bottomLeftRadius": 0,
+                "bottomRightRadius": 0,
+                "horizontalPadding": 12.8,
+                "distanceFromCenter": 0
+            },
+            "colorActiveIcon": null,
+            "alwaysShowTabBar": false,
+            "radiusBottomLeft": 0,
+            "showFloatingClip": true,
+            "radiusBottomRight": 0
+        },
+        "ProductDetail": "simpleType",
+        "AgeRestriction": {
+            "title": "Welcome to our shop\nYou must be 21 or older to enter",
+            "enable": false,
+            "useLogo": true,
+            "imageUrl": "",
+            "minimumAge": 21,
+            "hintMessage": "What is your year of birth?",
+            "deniedMessage": "You are not of legal age to use this application",
+            "alwaysShowUponOpen": true,
+            "backgroundImageUrl": ""
+        },
+        "ProductListLayout": "list",
+        "SmartEngagementBanner": {
+            "popup": {
+                "data": {
+                    "fit": "fitHeight",
+                    "key": "p2oq4zc4hg",
+                    "items": [
+                        {
+                            "image": "https://i.imgur.com/ZL1LO75.png",
+                            "padding": 0,
+                            "category": "22",
+                            "products": [],
+                            "showSubcategory": false,
+                            "bannerWithProduct": false,
+                            "defaultShowProduct": false
+                        }
+                    ],
+                    "design": "static",
+                    "height": 0.45,
+                    "layout": "bannerImage",
+                    "parallax": false,
+                    "marginTop": 10,
+                    "marginLeft": null,
+                    "marginRight": null,
+                    "isHorizontal": false,
+                    "marginBottom": 10,
+                    "enableParallax": false,
+                    "parallaxImageRatio": 1.2
+                },
+                "enable": false,
+                "updatedTime": 1748432447972,
+                "closePosition": "topRight",
+                "alwaysShowUponOpen": true
+            },
+            "sticky": {
+                "data": {
+                    "fit": "fitWidth",
+                    "key": "ga8oe39k5t",
+                    "items": [
+                        {
+                            "image": "https://i.imgur.com/LUaEM3v.jpeg",
+                            "coupon": "halfprice",
+                            "radius": 9,
+                            "padding": 0,
+                            "products": [],
+                            "showSubcategory": false,
+                            "bannerWithProduct": false,
+                            "defaultShowProduct": false
+                        }
+                    ],
+                    "design": "static",
+                    "height": 0.2,
+                    "layout": "bannerImage",
+                    "parallax": false,
+                    "marginTop": 10,
+                    "marginLeft": 10,
+                    "marginRight": 10,
+                    "isHorizontal": false,
+                    "marginBottom": 10,
+                    "enableParallax": false,
+                    "parallaxImageRatio": 1.2
+                },
+                "enable": false
+            },
+            "flexible": {
+                "data": {
+                    "items": [
+                        {
+                            "image": "https://assets9.lottiefiles.com/private_files/lf30_a4mKwA.json",
+                            "width": 100,
+                            "height": 80,
+                            "navigator": {
+                                "coupon": "blackf",
+                                "showSubcategory": false
+                            },
+                            "marginLeft": 0,
+                            "marginRight": 0,
+                            "useMaxWidth": true,
+                            "borderRadius": 2,
+                            "textFontSize": 14
+                        }
+                    ],
+                    "layout": "button",
+                    "alignment": "topCenter",
+                    "marginTop": 0,
+                    "marginBottom": 0
+                },
+                "width": 100,
+                "enable": false,
+                "height": 100,
+                "canDrag": true,
+                "canClose": true
+            }
+        }
+    },
+    "TabBar": [
+        {
+            "key": "wCykogCdOy",
+            "icon": "assets/icons/tabs/icon-home.png",
+            "layout": "home"
+        },
+        {
+            "key": "HPbAHDplDkz",
+            "icon": "assets/icons/tabs/icon-category.png",
+            "layout": "category",
+            "parallax": true,
+            "defaultTab": false,
+            "fullscreen": false,
+            "showQRCode": true,
+            "showSearch": true,
+            "categoryLayout": "card",
+            "showOriginalColor": false,
+            "parallaxImageRatio": 1.2
+        },
+        {
+            "key": "YPCBplMDaGPH",
+            "icon": "assets/icons/tabs/icon-search.png",
+            "layout": "search"
+        },
+        {
+            "key": "tNKTZtwANBtTl",
+            "icon": "assets/icons/tabs/icon-cart2.png",
+            "layout": "cart"
+        },
+        {
+            "key": "zhvGiGHVExzQYN",
+            "icon": "assets/icons/tabs/icon-user.png",
+            "layout": "profile",
+            "settings": [
+                "biometrics",
+                "wallet",
+                "wishlist",
+                "notifications",
+                "language",
+                "currencies",
+                "darkTheme",
+                "order",
+                "point",
+                "rating",
+                "privacy",
+                "about",
+                "my-rating"
+            ],
+            "styleItem": "flatShadow",
+            "defaultTab": false,
+            "fullscreen": false,
+            "showBackground": false,
+            "showOriginalColor": false,
+            "subGeneralSetting": {
+                "about": {
+                    "webUrl": "https://ktskw.com/about-us/"
+                },
+                "privacy": {
+                    "webUrl": "https://ktskw.com/privacy-policy/"
+                }
+            }
+        }
+    ],
+    "AppBar": {
+        "snap": true,
+        "enable": false,
+        "pinned": true,
+        "floating": true,
+        "elevation": 0,
+        "showOnScreens": [
+            "home"
+        ],
+        "alwaysShowAppBar": false
+    },
+    "Drawer": {
+        "logo": "assets/images/app_icon_transparent.png",
+        "items": [
+            {
+                "show": true,
+                "type": "home"
+            },
+            {
+                "show": false,
+                "type": "blog"
+            },
+            {
+                "show": true,
+                "type": "categories"
+            },
+            {
+                "show": true,
+                "type": "cart"
+            },
+            {
+                "show": true,
+                "type": "profile"
+            },
+            {
+                "show": true,
+                "type": "login"
+            },
+            {
+                "show": false,
+                "type": "category"
+            },
+            {
+                "show": false,
+                "type": "web-skzZUznKuD"
+            }
+        ],
+        "enable": true,
+        "filter": 0,
+        "logoDark": "assets/images/app_icon_transparent.png",
+        "safeArea": false,
+        "iconColor": null,
+        "textColor": null,
+        "logoConfig": {
+            "boxFit": "cover",
+            "height": 38,
+            "marginTop": 60,
+            "marginLeft": 5,
+            "marginRight": 0,
+            "marginBottom": 10
+        },
+        "zoomConfig": {
+            "angle": 0,
+            "style": "overlay",
+            "slideWidth": 0.65,
+            "slideMargin": 12,
+            "borderRadius": 42,
+            "enableShadow": true,
+            "backgroundImage": null,
+            "mainScreenScale": 0.3
+        },
+        "colorFilter": null,
+        "subDrawerItem": {
+            "web-skzZUznKuD": {
+                "id": "web-12",
+                "icon": "news",
+                "title": "",
+                "buttons": [],
+                "enableClose": false,
+                "webViewMode": false,
+                "bannerHeight": 15,
+                "useTabScreen": false,
+                "enableDivider": false,
+                "enableForward": false,
+                "requiredLogin": false,
+                "enableBackward": true,
+                "iconFontFamily": "CupertinoIcons",
+                "buttonAlignment": "centerLeft"
+            }
+        },
+        "backgroundColor": null,
+        "backgroundImage": null
+    }
+}

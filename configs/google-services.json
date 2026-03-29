@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "700306081623",
+    "firebase_url": "https://teleseen-c42d9-default-rtdb.firebaseio.com",
+    "project_id": "teleseen-c42d9",
+    "storage_bucket": "teleseen-c42d9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700306081623:android:6a684eb32ee0fe3b502012",
+        "android_client_info": {
+          "package_name": "com.teleseen.webstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700306081623-vfc2gtdptfafq8tbsjouopm5ooodng6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teleseen.webstore",
+            "certificate_hash": "d087f0616fb1139bc19edc18f549f3dd3a1c1eb1"
+          }
+        },
+        {
+          "client_id": "700306081623-c6aqo6120dqommvlpl15kkle1bf35oje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgKTFBKcsO3AuYN8hHuU4gzKrxi1T_iiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700306081623-c6aqo6120dqommvlpl15kkle1bf35oje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

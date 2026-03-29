@@ -1,0 +1,973 @@
+﻿> Task :gradle:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy NO-SOURCE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+
+> Configure project :app
+WARNING: The option 'android.bundle.enableUncompressedNativeLibs' is deprecated.
+The current default is 'true'.
+It was removed in version 8.1 of the Android Gradle plugin.
+? Loading configs from configs/env.props...
+
+
+> Configure project :devicelocale
+Warning: The plugin devicelocale requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :flutter_branch_sdk
+8.2.0
+
+> Configure project :flutter_facebook_auth
+Warning: The plugin flutter_facebook_auth requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :flutter_plugin_android_lifecycle
+Warning: The plugin flutter_plugin_android_lifecycle requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :google_maps_flutter_android
+Warning: The plugin google_maps_flutter_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :google_sign_in_android
+Warning: The plugin google_sign_in_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :image_picker_android
+Warning: The plugin image_picker_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :local_auth_android
+Warning: The plugin local_auth_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :path_provider_android
+Warning: The plugin path_provider_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :shared_preferences_android
+Warning: The plugin shared_preferences_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :sqflite_android
+Warning: The plugin sqflite_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :url_launcher_android
+Warning: The plugin url_launcher_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :video_player_android
+Warning: The plugin video_player_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+
+> Configure project :webview_flutter_android
+./gradlew : Your project 
+is configured to compile 
+against Android SDK 35, 
+but the following 
+plugin(s) require to be 
+compiled against a higher 
+Android SDK version:
+At line:1 char:1
++ ./gradlew bundleRelease 
+> gradle_error.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpe    cified: 
+(Your pr    oject is...id 
+SD    K version::Strin    
+g) [], RemoteExc    eption
+    + FullyQualified    
+ErrorId : Native    
+CommandError
+ 
+- devicelocale compiles 
+against Android SDK 36
+- flutter_facebook_auth 
+compiles against Android 
+SDK 36
+- flutter_plugin_android_l
+ifecycle compiles against 
+Android SDK 36
+- google_maps_flutter_andr
+oid compiles against 
+Android SDK 36
+- google_sign_in_android 
+compiles against Android 
+SDK 36
+- image_picker_android 
+compiles against Android 
+SDK 36
+- local_auth_android 
+compiles against Android 
+SDK 36
+- path_provider_android 
+compiles against Android 
+SDK 36
+- shared_preferences_andro
+id compiles against 
+Android SDK 36
+- sqflite_android 
+compiles against Android 
+SDK 36
+- url_launcher_android 
+compiles against Android 
+SDK 36
+- video_player_android 
+compiles against Android 
+SDK 36
+Fix this issue by 
+compiling against the 
+highest Android SDK 
+version (they are 
+backward compatible).
+Add the following to C:\of
+fice\teleseen\android\app\
+build.gradle:
+
+    android {
+        compileSdk = 36
+        ...
+    }
+? Copying configs/google-services.json to android/app/google-services.json
+? Copying configs/customized to project...
+
+?  Building TeleSeen... ?
+
+
+? Signing with keystore key.jks... ?
+
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.7.1) was tested up to compileSdk = 35.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+For more information refer to the compatibility table:
+https://d.android.com/r/tools/api-level-support
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+
+> Task :app:copyConfigFiles
+> Task :app:copyGoogleServices
+> Task :app:preBuild
+> Task :app:preReleaseBuild
+> Task :app:generateReleaseFeatureMetadata UP-TO-DATE
+> Task :cloud_firestore:preBuild UP-TO-DATE
+> Task :cloud_firestore:preReleaseBuild UP-TO-DATE
+> Task :cloud_firestore:generateReleaseBuildConfig UP-TO-DATE
+> Task :cloud_firestore:generateReleaseResValues UP-TO-DATE
+> Task :cloud_firestore:generateReleaseResources UP-TO-DATE
+> Task :cloud_firestore:packageReleaseResources UP-TO-DATE
+> Task :cloud_firestore:parseReleaseLocalResources UP-TO-DATE
+> Task :cloud_firestore:generateReleaseRFile UP-TO-DATE
+> Task :cloud_firestore:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_core:preBuild UP-TO-DATE
+> Task :firebase_core:preReleaseBuild UP-TO-DATE
+> Task :firebase_core:generateReleaseBuildConfig UP-TO-DATE
+> Task :firebase_core:generateReleaseResValues UP-TO-DATE
+> Task :firebase_core:generateReleaseResources UP-TO-DATE
+> Task :firebase_core:packageReleaseResources UP-TO-DATE
+> Task :firebase_core:parseReleaseLocalResources UP-TO-DATE
+> Task :firebase_core:generateReleaseRFile UP-TO-DATE
+> Task :firebase_core:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_core:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :firebase_core:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :cloud_firestore:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :cloud_firestore:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :devicelocale:preBuild UP-TO-DATE
+> Task :devicelocale:preReleaseBuild UP-TO-DATE
+> Task :devicelocale:generateReleaseResValues UP-TO-DATE
+> Task :devicelocale:generateReleaseResources UP-TO-DATE
+> Task :devicelocale:packageReleaseResources UP-TO-DATE
+> Task :devicelocale:parseReleaseLocalResources UP-TO-DATE
+> Task :devicelocale:generateReleaseRFile UP-TO-DATE
+> Task :devicelocale:javaPreCompileRelease UP-TO-DATE
+> Task :devicelocale:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :devicelocale:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :devicelocale:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :facebook_app_events:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :facebook_app_events:preBuild UP-TO-DATE
+> Task :facebook_app_events:preReleaseBuild UP-TO-DATE
+> Task :facebook_app_events:generateReleaseResValues UP-TO-DATE
+> Task :facebook_app_events:generateReleaseResources UP-TO-DATE
+> Task :facebook_app_events:packageReleaseResources UP-TO-DATE
+> Task :facebook_app_events:parseReleaseLocalResources UP-TO-DATE
+> Task :facebook_app_events:generateReleaseRFile UP-TO-DATE
+> Task :facebook_app_events:compileReleaseKotlin UP-TO-DATE
+> Task :facebook_app_events:javaPreCompileRelease UP-TO-DATE
+> Task :facebook_app_events:compileReleaseJavaWithJavac NO-SOURCE
+> Task :facebook_app_events:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :facebook_app_events:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :file_picker:preBuild UP-TO-DATE
+> Task :file_picker:preReleaseBuild UP-TO-DATE
+> Task :file_picker:generateReleaseResValues UP-TO-DATE
+> Task :file_picker:generateReleaseResources UP-TO-DATE
+> Task :file_picker:packageReleaseResources UP-TO-DATE
+> Task :file_picker:parseReleaseLocalResources UP-TO-DATE
+> Task :file_picker:generateReleaseRFile UP-TO-DATE
+> Task :file_picker:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:preBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:preReleaseBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateReleaseResValues UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateReleaseResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:packageReleaseResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateReleaseRFile UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :file_picker:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :file_picker:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :file_picker:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_analytics:preBuild UP-TO-DATE
+> Task :firebase_analytics:preReleaseBuild UP-TO-DATE
+> Task :firebase_analytics:generateReleaseBuildConfig UP-TO-DATE
+> Task :firebase_analytics:generateReleaseResValues UP-TO-DATE
+> Task :firebase_analytics:generateReleaseResources UP-TO-DATE
+> Task :firebase_analytics:packageReleaseResources UP-TO-DATE
+> Task :firebase_analytics:parseReleaseLocalResources UP-TO-DATE
+> Task :firebase_analytics:generateReleaseRFile UP-TO-DATE
+> Task :firebase_analytics:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_analytics:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :firebase_analytics:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :firebase_analytics:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_auth:preBuild UP-TO-DATE
+> Task :firebase_auth:preReleaseBuild UP-TO-DATE
+> Task :firebase_auth:generateReleaseBuildConfig UP-TO-DATE
+> Task :firebase_auth:generateReleaseResValues UP-TO-DATE
+> Task :firebase_auth:generateReleaseResources UP-TO-DATE
+> Task :firebase_auth:packageReleaseResources UP-TO-DATE
+> Task :firebase_auth:parseReleaseLocalResources UP-TO-DATE
+> Task :firebase_auth:generateReleaseRFile UP-TO-DATE
+> Task :firebase_auth:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_auth:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :firebase_auth:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :firebase_auth:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_dynamic_links:preBuild UP-TO-DATE
+> Task :firebase_dynamic_links:preReleaseBuild UP-TO-DATE
+> Task :firebase_dynamic_links:generateReleaseBuildConfig UP-TO-DATE
+> Task :firebase_dynamic_links:generateReleaseResValues UP-TO-DATE
+> Task :firebase_dynamic_links:generateReleaseResources UP-TO-DATE
+> Task :firebase_dynamic_links:packageReleaseResources UP-TO-DATE
+> Task :firebase_dynamic_links:parseReleaseLocalResources UP-TO-DATE
+> Task :firebase_dynamic_links:generateReleaseRFile UP-TO-DATE
+> Task :firebase_dynamic_links:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_dynamic_links:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :firebase_dynamic_links:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :firebase_dynamic_links:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_messaging:preBuild UP-TO-DATE
+> Task :firebase_messaging:preReleaseBuild UP-TO-DATE
+> Task :firebase_messaging:generateReleaseBuildConfig UP-TO-DATE
+> Task :firebase_messaging:generateReleaseResValues UP-TO-DATE
+> Task :firebase_messaging:generateReleaseResources UP-TO-DATE
+> Task :firebase_messaging:packageReleaseResources UP-TO-DATE
+> Task :firebase_messaging:parseReleaseLocalResources UP-TO-DATE
+> Task :firebase_messaging:generateReleaseRFile UP-TO-DATE
+> Task :firebase_messaging:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_messaging:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :firebase_messaging:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :firebase_messaging:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_remote_config:preBuild UP-TO-DATE
+> Task :firebase_remote_config:preReleaseBuild UP-TO-DATE
+> Task :firebase_remote_config:generateReleaseBuildConfig UP-TO-DATE
+> Task :firebase_remote_config:generateReleaseResValues UP-TO-DATE
+> Task :firebase_remote_config:generateReleaseResources UP-TO-DATE
+> Task :firebase_remote_config:packageReleaseResources UP-TO-DATE
+> Task :firebase_remote_config:parseReleaseLocalResources UP-TO-DATE
+> Task :firebase_remote_config:generateReleaseRFile UP-TO-DATE
+> Task :firebase_remote_config:javaPreCompileRelease UP-TO-DATE
+> Task :firebase_remote_config:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :firebase_remote_config:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :firebase_remote_config:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :firebase_core:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :firebase_core:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_branch_sdk:preBuild UP-TO-DATE
+> Task :flutter_branch_sdk:preReleaseBuild UP-TO-DATE
+> Task :flutter_branch_sdk:generateReleaseBuildConfig UP-TO-DATE
+> Task :flutter_branch_sdk:generateReleaseResValues UP-TO-DATE
+> Task :flutter_branch_sdk:generateReleaseResources UP-TO-DATE
+> Task :flutter_branch_sdk:packageReleaseResources UP-TO-DATE
+> Task :flutter_branch_sdk:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_branch_sdk:generateReleaseRFile UP-TO-DATE
+> Task :flutter_branch_sdk:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_branch_sdk:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_branch_sdk:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_branch_sdk:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_facebook_auth:preBuild UP-TO-DATE
+> Task :flutter_facebook_auth:preReleaseBuild UP-TO-DATE
+> Task :flutter_facebook_auth:generateReleaseResValues UP-TO-DATE
+> Task :flutter_facebook_auth:generateReleaseResources UP-TO-DATE
+> Task :flutter_facebook_auth:packageReleaseResources UP-TO-DATE
+> Task :flutter_facebook_auth:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_facebook_auth:generateReleaseRFile UP-TO-DATE
+> Task :flutter_facebook_auth:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_facebook_auth:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_facebook_auth:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_facebook_auth:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_inappwebview_android:preBuild UP-TO-DATE
+> Task :flutter_inappwebview_android:preReleaseBuild UP-TO-DATE
+> Task :flutter_inappwebview_android:generateReleaseResValues UP-TO-DATE
+> Task :flutter_inappwebview_android:generateReleaseResources UP-TO-DATE
+> Task :flutter_inappwebview_android:packageReleaseResources UP-TO-DATE
+> Task :flutter_inappwebview_android:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_inappwebview_android:generateReleaseRFile UP-TO-DATE
+> Task :flutter_inappwebview_android:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_inappwebview_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_inappwebview_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_inappwebview_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_keyboard_visibility:preBuild UP-TO-DATE
+> Task :flutter_keyboard_visibility:preReleaseBuild UP-TO-DATE
+> Task :flutter_keyboard_visibility:generateReleaseResValues UP-TO-DATE
+> Task :flutter_keyboard_visibility:generateReleaseResources UP-TO-DATE
+> Task :flutter_keyboard_visibility:packageReleaseResources UP-TO-DATE
+> Task :flutter_keyboard_visibility:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_keyboard_visibility:generateReleaseRFile UP-TO-DATE
+> Task :flutter_keyboard_visibility:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_keyboard_visibility:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_keyboard_visibility:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_keyboard_visibility:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_local_notifications:preBuild UP-TO-DATE
+> Task :flutter_local_notifications:preReleaseBuild UP-TO-DATE
+> Task :flutter_local_notifications:generateReleaseResValues UP-TO-DATE
+> Task :flutter_local_notifications:generateReleaseResources UP-TO-DATE
+> Task :flutter_local_notifications:packageReleaseResources UP-TO-DATE
+> Task :flutter_local_notifications:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_local_notifications:generateReleaseRFile UP-TO-DATE
+> Task :flutter_local_notifications:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_local_notifications:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_local_notifications:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_local_notifications:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_native_image:preBuild UP-TO-DATE
+> Task :flutter_native_image:preReleaseBuild UP-TO-DATE
+> Task :flutter_native_image:generateReleaseResValues UP-TO-DATE
+> Task :flutter_native_image:generateReleaseResources UP-TO-DATE
+> Task :flutter_native_image:packageReleaseResources UP-TO-DATE
+> Task :flutter_native_image:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_native_image:generateReleaseRFile UP-TO-DATE
+> Task :flutter_native_image:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_native_image:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_native_image:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_native_image:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_native_splash:preBuild UP-TO-DATE
+> Task :flutter_native_splash:preReleaseBuild UP-TO-DATE
+> Task :flutter_native_splash:generateReleaseResValues UP-TO-DATE
+> Task :flutter_native_splash:generateReleaseResources UP-TO-DATE
+> Task :flutter_native_splash:packageReleaseResources UP-TO-DATE
+> Task :flutter_native_splash:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_native_splash:generateReleaseRFile UP-TO-DATE
+> Task :flutter_native_splash:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_native_splash:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_native_splash:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_native_splash:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_paystack:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :flutter_paystack:preBuild UP-TO-DATE
+> Task :flutter_paystack:preReleaseBuild UP-TO-DATE
+> Task :flutter_paystack:generateReleaseResValues UP-TO-DATE
+> Task :flutter_paystack:generateReleaseResources UP-TO-DATE
+> Task :flutter_paystack:packageReleaseResources UP-TO-DATE
+> Task :flutter_paystack:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_paystack:generateReleaseRFile UP-TO-DATE
+> Task :flutter_paystack:compileReleaseKotlin UP-TO-DATE
+> Task :flutter_paystack:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_paystack:compileReleaseJavaWithJavac NO-SOURCE
+> Task :flutter_paystack:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_paystack:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :google_maps_flutter_android:preBuild UP-TO-DATE
+> Task :google_maps_flutter_android:preReleaseBuild UP-TO-DATE
+> Task :google_maps_flutter_android:generateReleaseResValues UP-TO-DATE
+> Task :google_maps_flutter_android:generateReleaseResources UP-TO-DATE
+> Task :google_maps_flutter_android:packageReleaseResources UP-TO-DATE
+> Task :google_maps_flutter_android:parseReleaseLocalResources UP-TO-DATE
+> Task :google_maps_flutter_android:generateReleaseRFile UP-TO-DATE
+> Task :google_maps_flutter_android:javaPreCompileRelease UP-TO-DATE
+> Task :google_maps_flutter_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :google_maps_flutter_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :google_maps_flutter_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :image_picker_android:preBuild UP-TO-DATE
+> Task :image_picker_android:preReleaseBuild UP-TO-DATE
+> Task :image_picker_android:generateReleaseResValues UP-TO-DATE
+> Task :image_picker_android:generateReleaseResources UP-TO-DATE
+> Task :image_picker_android:packageReleaseResources UP-TO-DATE
+> Task :image_picker_android:parseReleaseLocalResources UP-TO-DATE
+> Task :image_picker_android:generateReleaseRFile UP-TO-DATE
+> Task :image_picker_android:javaPreCompileRelease UP-TO-DATE
+> Task :image_picker_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :image_picker_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :image_picker_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :local_auth_android:preBuild UP-TO-DATE
+> Task :local_auth_android:preReleaseBuild UP-TO-DATE
+> Task :local_auth_android:generateReleaseResValues UP-TO-DATE
+> Task :local_auth_android:generateReleaseResources UP-TO-DATE
+> Task :local_auth_android:packageReleaseResources UP-TO-DATE
+> Task :local_auth_android:parseReleaseLocalResources UP-TO-DATE
+> Task :local_auth_android:generateReleaseRFile UP-TO-DATE
+> Task :local_auth_android:javaPreCompileRelease UP-TO-DATE
+> Task :local_auth_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :local_auth_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :local_auth_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_secure_storage:preBuild UP-TO-DATE
+> Task :flutter_secure_storage:preReleaseBuild UP-TO-DATE
+> Task :flutter_secure_storage:generateReleaseBuildConfig UP-TO-DATE
+> Task :flutter_secure_storage:generateReleaseResValues UP-TO-DATE
+> Task :flutter_secure_storage:generateReleaseResources UP-TO-DATE
+> Task :flutter_secure_storage:packageReleaseResources UP-TO-DATE
+> Task :flutter_secure_storage:parseReleaseLocalResources UP-TO-DATE
+> Task :flutter_secure_storage:generateReleaseRFile UP-TO-DATE
+> Task :flutter_secure_storage:javaPreCompileRelease UP-TO-DATE
+> Task :flutter_secure_storage:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :flutter_secure_storage:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :inspireui:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :inspireui:preBuild UP-TO-DATE
+> Task :inspireui:preReleaseBuild UP-TO-DATE
+> Task :inspireui:generateReleaseResValues UP-TO-DATE
+> Task :inspireui:generateReleaseResources UP-TO-DATE
+> Task :inspireui:packageReleaseResources UP-TO-DATE
+> Task :inspireui:parseReleaseLocalResources UP-TO-DATE
+> Task :inspireui:generateReleaseRFile UP-TO-DATE
+> Task :inspireui:compileReleaseKotlin UP-TO-DATE
+> Task :inspireui:javaPreCompileRelease UP-TO-DATE
+> Task :inspireui:compileReleaseJavaWithJavac NO-SOURCE
+> Task :inspireui:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :inspireui:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :flutter_secure_storage:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :flutter_secure_storage:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :fluttertoast:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :fluttertoast:preBuild UP-TO-DATE
+> Task :fluttertoast:preReleaseBuild UP-TO-DATE
+> Task :fluttertoast:generateReleaseResValues UP-TO-DATE
+> Task :fluttertoast:generateReleaseResources UP-TO-DATE
+> Task :fluttertoast:packageReleaseResources UP-TO-DATE
+> Task :fluttertoast:parseReleaseLocalResources UP-TO-DATE
+> Task :fluttertoast:generateReleaseRFile UP-TO-DATE
+> Task :fluttertoast:compileReleaseKotlin UP-TO-DATE
+> Task :fluttertoast:javaPreCompileRelease UP-TO-DATE
+> Task :fluttertoast:compileReleaseJavaWithJavac NO-SOURCE
+> Task :fluttertoast:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :razorpay_flutter:preBuild UP-TO-DATE
+> Task :razorpay_flutter:preReleaseBuild UP-TO-DATE
+> Task :razorpay_flutter:generateReleaseResValues UP-TO-DATE
+> Task :razorpay_flutter:generateReleaseResources UP-TO-DATE
+> Task :razorpay_flutter:packageReleaseResources UP-TO-DATE
+> Task :razorpay_flutter:parseReleaseLocalResources UP-TO-DATE
+> Task :razorpay_flutter:generateReleaseRFile UP-TO-DATE
+> Task :razorpay_flutter:javaPreCompileRelease UP-TO-DATE
+> Task :razorpay_flutter:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :razorpay_flutter:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :razorpay_flutter:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :fluttertoast:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :fluttertoast:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :geocoding_android:preBuild UP-TO-DATE
+> Task :geocoding_android:preReleaseBuild UP-TO-DATE
+> Task :geocoding_android:generateReleaseResValues UP-TO-DATE
+> Task :geocoding_android:generateReleaseResources UP-TO-DATE
+> Task :geocoding_android:packageReleaseResources UP-TO-DATE
+> Task :geocoding_android:parseReleaseLocalResources UP-TO-DATE
+> Task :geocoding_android:generateReleaseRFile UP-TO-DATE
+> Task :geocoding_android:javaPreCompileRelease UP-TO-DATE
+> Task :geocoding_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :geocoding_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :geocoding_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :get_thumbnail_video:preBuild UP-TO-DATE
+> Task :get_thumbnail_video:preReleaseBuild UP-TO-DATE
+> Task :get_thumbnail_video:generateReleaseResValues UP-TO-DATE
+> Task :get_thumbnail_video:generateReleaseResources UP-TO-DATE
+> Task :get_thumbnail_video:packageReleaseResources UP-TO-DATE
+> Task :get_thumbnail_video:parseReleaseLocalResources UP-TO-DATE
+> Task :get_thumbnail_video:generateReleaseRFile UP-TO-DATE
+> Task :get_thumbnail_video:javaPreCompileRelease UP-TO-DATE
+> Task :get_thumbnail_video:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :get_thumbnail_video:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :get_thumbnail_video:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :gms_check:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gms_check:preBuild UP-TO-DATE
+> Task :gms_check:preReleaseBuild UP-TO-DATE
+> Task :gms_check:generateReleaseResValues UP-TO-DATE
+> Task :gms_check:generateReleaseResources UP-TO-DATE
+> Task :gms_check:packageReleaseResources UP-TO-DATE
+> Task :gms_check:parseReleaseLocalResources UP-TO-DATE
+> Task :gms_check:generateReleaseRFile UP-TO-DATE
+> Task :gms_check:compileReleaseKotlin UP-TO-DATE
+> Task :gms_check:javaPreCompileRelease UP-TO-DATE
+> Task :gms_check:compileReleaseJavaWithJavac NO-SOURCE
+> Task :gms_check:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :gms_check:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :google_mobile_ads:preBuild UP-TO-DATE
+> Task :google_mobile_ads:preReleaseBuild UP-TO-DATE
+> Task :google_mobile_ads:generateReleaseResValues UP-TO-DATE
+> Task :google_mobile_ads:generateReleaseResources UP-TO-DATE
+> Task :google_mobile_ads:packageReleaseResources UP-TO-DATE
+> Task :google_mobile_ads:parseReleaseLocalResources UP-TO-DATE
+> Task :google_mobile_ads:generateReleaseRFile UP-TO-DATE
+> Task :google_mobile_ads:javaPreCompileRelease UP-TO-DATE
+> Task :webview_flutter_android:preBuild UP-TO-DATE
+> Task :webview_flutter_android:preReleaseBuild UP-TO-DATE
+> Task :webview_flutter_android:generateReleaseResValues UP-TO-DATE
+> Task :webview_flutter_android:generateReleaseResources UP-TO-DATE
+> Task :webview_flutter_android:packageReleaseResources UP-TO-DATE
+> Task :webview_flutter_android:parseReleaseLocalResources UP-TO-DATE
+> Task :webview_flutter_android:generateReleaseRFile UP-TO-DATE
+> Task :webview_flutter_android:javaPreCompileRelease UP-TO-DATE
+> Task :webview_flutter_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :webview_flutter_android:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :google_mobile_ads:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :google_mobile_ads:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :google_mobile_ads:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :google_sign_in_android:preBuild UP-TO-DATE
+> Task :google_sign_in_android:preReleaseBuild UP-TO-DATE
+> Task :google_sign_in_android:generateReleaseResValues UP-TO-DATE
+> Task :google_sign_in_android:generateReleaseResources UP-TO-DATE
+> Task :google_sign_in_android:packageReleaseResources UP-TO-DATE
+> Task :google_sign_in_android:parseReleaseLocalResources UP-TO-DATE
+> Task :google_sign_in_android:generateReleaseRFile UP-TO-DATE
+> Task :google_sign_in_android:javaPreCompileRelease UP-TO-DATE
+> Task :google_sign_in_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :google_sign_in_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :google_sign_in_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :in_app_update:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :in_app_update:preBuild UP-TO-DATE
+> Task :in_app_update:preReleaseBuild UP-TO-DATE
+> Task :in_app_update:generateReleaseResValues UP-TO-DATE
+> Task :in_app_update:generateReleaseResources UP-TO-DATE
+> Task :in_app_update:packageReleaseResources UP-TO-DATE
+> Task :in_app_update:parseReleaseLocalResources UP-TO-DATE
+> Task :in_app_update:generateReleaseRFile UP-TO-DATE
+> Task :in_app_update:compileReleaseKotlin UP-TO-DATE
+> Task :in_app_update:javaPreCompileRelease UP-TO-DATE
+> Task :in_app_update:compileReleaseJavaWithJavac NO-SOURCE
+> Task :in_app_update:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :in_app_update:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :libphonenumber_plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :libphonenumber_plugin:preBuild UP-TO-DATE
+> Task :libphonenumber_plugin:preReleaseBuild UP-TO-DATE
+> Task :libphonenumber_plugin:generateReleaseResValues UP-TO-DATE
+> Task :libphonenumber_plugin:generateReleaseResources UP-TO-DATE
+> Task :libphonenumber_plugin:packageReleaseResources UP-TO-DATE
+> Task :libphonenumber_plugin:parseReleaseLocalResources UP-TO-DATE
+> Task :libphonenumber_plugin:generateReleaseRFile UP-TO-DATE
+> Task :libphonenumber_plugin:compileReleaseKotlin UP-TO-DATE
+> Task :libphonenumber_plugin:javaPreCompileRelease UP-TO-DATE
+> Task :libphonenumber_plugin:compileReleaseJavaWithJavac NO-SOURCE
+> Task :libphonenumber_plugin:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :libphonenumber_plugin:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :location:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :location:preBuild UP-TO-DATE
+> Task :location:preReleaseBuild UP-TO-DATE
+> Task :location:generateReleaseResValues UP-TO-DATE
+> Task :location:generateReleaseResources UP-TO-DATE
+> Task :location:packageReleaseResources UP-TO-DATE
+> Task :location:parseReleaseLocalResources UP-TO-DATE
+> Task :location:generateReleaseRFile UP-TO-DATE
+> Task :location:compileReleaseKotlin UP-TO-DATE
+> Task :location:javaPreCompileRelease UP-TO-DATE
+> Task :location:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :location:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :location:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :onesignal_flutter:preBuild UP-TO-DATE
+> Task :onesignal_flutter:preReleaseBuild UP-TO-DATE
+> Task :onesignal_flutter:generateReleaseResValues UP-TO-DATE
+> Task :onesignal_flutter:generateReleaseResources UP-TO-DATE
+> Task :onesignal_flutter:packageReleaseResources UP-TO-DATE
+> Task :onesignal_flutter:parseReleaseLocalResources UP-TO-DATE
+> Task :onesignal_flutter:generateReleaseRFile UP-TO-DATE
+> Task :onesignal_flutter:javaPreCompileRelease UP-TO-DATE
+> Task :onesignal_flutter:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :onesignal_flutter:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :onesignal_flutter:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :package_info_plus:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :package_info_plus:preBuild UP-TO-DATE
+> Task :package_info_plus:preReleaseBuild UP-TO-DATE
+> Task :package_info_plus:generateReleaseResValues UP-TO-DATE
+> Task :package_info_plus:generateReleaseResources UP-TO-DATE
+> Task :package_info_plus:packageReleaseResources UP-TO-DATE
+> Task :package_info_plus:parseReleaseLocalResources UP-TO-DATE
+> Task :package_info_plus:generateReleaseRFile UP-TO-DATE
+> Task :package_info_plus:compileReleaseKotlin UP-TO-DATE
+> Task :package_info_plus:javaPreCompileRelease UP-TO-DATE
+> Task :package_info_plus:compileReleaseJavaWithJavac NO-SOURCE
+> Task :package_info_plus:bundleLibCompileToJarRelease UP-TO-DATE
+> Task :wakelock_plus:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :wakelock_plus:preBuild UP-TO-DATE
+> Task :wakelock_plus:preReleaseBuild UP-TO-DATE
+> Task :wakelock_plus:generateReleaseResValues UP-TO-DATE
+> Task :wakelock_plus:generateReleaseResources UP-TO-DATE
+> Task :wakelock_plus:packageReleaseResources UP-TO-DATE
+> Task :wakelock_plus:parseReleaseLocalResources UP-TO-DATE
+> Task :wakelock_plus:generateReleaseRFile UP-TO-DATE
+> Task :wakelock_plus:compileReleaseKotlin UP-TO-DATE
+> Task :wakelock_plus:javaPreCompileRelease UP-TO-DATE
+> Task :wakelock_plus:compileReleaseJavaWithJavac NO-SOURCE
+> Task :wakelock_plus:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :wakelock_plus:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :package_info_plus:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :package_info_plus:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :path_provider_android:preBuild UP-TO-DATE
+> Task :path_provider_android:preReleaseBuild UP-TO-DATE
+> Task :path_provider_android:generateReleaseResValues UP-TO-DATE
+> Task :path_provider_android:generateReleaseResources UP-TO-DATE
+> Task :path_provider_android:packageReleaseResources UP-TO-DATE
+> Task :path_provider_android:parseReleaseLocalResources UP-TO-DATE
+> Task :path_provider_android:generateReleaseRFile UP-TO-DATE
+> Task :path_provider_android:javaPreCompileRelease UP-TO-DATE
+> Task :path_provider_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :path_provider_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :path_provider_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :paytm_allinonesdk:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :paytm_allinonesdk:preBuild UP-TO-DATE
+> Task :paytm_allinonesdk:preReleaseBuild UP-TO-DATE
+> Task :paytm_allinonesdk:generateReleaseResValues UP-TO-DATE
+> Task :paytm_allinonesdk:generateReleaseResources UP-TO-DATE
+> Task :paytm_allinonesdk:packageReleaseResources UP-TO-DATE
+> Task :paytm_allinonesdk:parseReleaseLocalResources UP-TO-DATE
+> Task :paytm_allinonesdk:generateReleaseRFile UP-TO-DATE
+> Task :paytm_allinonesdk:compileReleaseKotlin UP-TO-DATE
+> Task :paytm_allinonesdk:javaPreCompileRelease UP-TO-DATE
+> Task :paytm_allinonesdk:compileReleaseJavaWithJavac NO-SOURCE
+> Task :paytm_allinonesdk:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :paytm_allinonesdk:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :permission_handler_android:preBuild UP-TO-DATE
+> Task :permission_handler_android:preReleaseBuild UP-TO-DATE
+> Task :permission_handler_android:generateReleaseResValues UP-TO-DATE
+> Task :permission_handler_android:generateReleaseResources UP-TO-DATE
+> Task :permission_handler_android:packageReleaseResources UP-TO-DATE
+> Task :permission_handler_android:parseReleaseLocalResources UP-TO-DATE
+> Task :permission_handler_android:generateReleaseRFile UP-TO-DATE
+> Task :permission_handler_android:javaPreCompileRelease UP-TO-DATE
+> Task :permission_handler_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :permission_handler_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :permission_handler_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :phonepe_payment_sdk:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :phonepe_payment_sdk:preBuild UP-TO-DATE
+> Task :phonepe_payment_sdk:preReleaseBuild UP-TO-DATE
+> Task :phonepe_payment_sdk:generateReleaseResValues UP-TO-DATE
+> Task :phonepe_payment_sdk:generateReleaseResources UP-TO-DATE
+> Task :phonepe_payment_sdk:packageReleaseResources UP-TO-DATE
+> Task :phonepe_payment_sdk:parseReleaseLocalResources UP-TO-DATE
+> Task :phonepe_payment_sdk:generateReleaseRFile UP-TO-DATE
+> Task :phonepe_payment_sdk:compileReleaseKotlin UP-TO-DATE
+> Task :phonepe_payment_sdk:javaPreCompileRelease UP-TO-DATE
+> Task :phonepe_payment_sdk:compileReleaseJavaWithJavac NO-SOURCE
+> Task :phonepe_payment_sdk:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :phonepe_payment_sdk:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :qr_code_scanner:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :qr_code_scanner:preBuild UP-TO-DATE
+> Task :qr_code_scanner:preReleaseBuild UP-TO-DATE
+> Task :qr_code_scanner:generateReleaseResValues UP-TO-DATE
+> Task :qr_code_scanner:generateReleaseResources UP-TO-DATE
+> Task :qr_code_scanner:packageReleaseResources UP-TO-DATE
+> Task :qr_code_scanner:parseReleaseLocalResources UP-TO-DATE
+> Task :qr_code_scanner:generateReleaseRFile UP-TO-DATE
+> Task :qr_code_scanner:compileReleaseKotlin UP-TO-DATE
+> Task :qr_code_scanner:javaPreCompileRelease UP-TO-DATE
+> Task :qr_code_scanner:compileReleaseJavaWithJavac NO-SOURCE
+> Task :qr_code_scanner:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :qr_code_scanner:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :rate_my_app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :rate_my_app:preBuild UP-TO-DATE
+> Task :rate_my_app:preReleaseBuild UP-TO-DATE
+> Task :rate_my_app:generateReleaseResValues UP-TO-DATE
+> Task :rate_my_app:generateReleaseResources UP-TO-DATE
+> Task :rate_my_app:packageReleaseResources UP-TO-DATE
+> Task :rate_my_app:parseReleaseLocalResources UP-TO-DATE
+> Task :rate_my_app:generateReleaseRFile UP-TO-DATE
+> Task :rate_my_app:compileReleaseKotlin UP-TO-DATE
+> Task :rate_my_app:javaPreCompileRelease UP-TO-DATE
+> Task :rate_my_app:compileReleaseJavaWithJavac NO-SOURCE
+> Task :rate_my_app:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :rate_my_app:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :rive_common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :rive_common:preBuild UP-TO-DATE
+> Task :rive_common:preReleaseBuild UP-TO-DATE
+> Task :rive_common:generateReleaseResValues UP-TO-DATE
+> Task :rive_common:generateReleaseResources UP-TO-DATE
+> Task :rive_common:packageReleaseResources UP-TO-DATE
+> Task :rive_common:parseReleaseLocalResources UP-TO-DATE
+> Task :rive_common:generateReleaseRFile UP-TO-DATE
+> Task :rive_common:compileReleaseKotlin UP-TO-DATE
+> Task :rive_common:javaPreCompileRelease UP-TO-DATE
+> Task :rive_common:compileReleaseJavaWithJavac NO-SOURCE
+> Task :rive_common:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :rive_common:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :share_plus:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :share_plus:preBuild UP-TO-DATE
+> Task :share_plus:preReleaseBuild UP-TO-DATE
+> Task :share_plus:generateReleaseResValues UP-TO-DATE
+> Task :share_plus:generateReleaseResources UP-TO-DATE
+> Task :share_plus:packageReleaseResources UP-TO-DATE
+> Task :share_plus:parseReleaseLocalResources UP-TO-DATE
+> Task :share_plus:generateReleaseRFile UP-TO-DATE
+> Task :share_plus:compileReleaseKotlin UP-TO-DATE
+> Task :share_plus:javaPreCompileRelease UP-TO-DATE
+> Task :share_plus:compileReleaseJavaWithJavac NO-SOURCE
+> Task :share_plus:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :share_plus:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :shared_preferences_android:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :shared_preferences_android:preBuild UP-TO-DATE
+> Task :shared_preferences_android:preReleaseBuild UP-TO-DATE
+> Task :shared_preferences_android:generateReleaseResValues UP-TO-DATE
+> Task :shared_preferences_android:generateReleaseResources UP-TO-DATE
+> Task :shared_preferences_android:packageReleaseResources UP-TO-DATE
+> Task :shared_preferences_android:parseReleaseLocalResources UP-TO-DATE
+> Task :shared_preferences_android:generateReleaseRFile UP-TO-DATE
+> Task :shared_preferences_android:compileReleaseKotlin UP-TO-DATE
+> Task :shared_preferences_android:javaPreCompileRelease UP-TO-DATE
+> Task :shared_preferences_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :shared_preferences_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :shared_preferences_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :sms_autofill:preBuild UP-TO-DATE
+> Task :sms_autofill:preReleaseBuild UP-TO-DATE
+> Task :sms_autofill:generateReleaseResValues UP-TO-DATE
+> Task :sms_autofill:generateReleaseResources UP-TO-DATE
+> Task :sms_autofill:packageReleaseResources UP-TO-DATE
+> Task :sms_autofill:parseReleaseLocalResources UP-TO-DATE
+> Task :sms_autofill:generateReleaseRFile UP-TO-DATE
+> Task :sms_autofill:javaPreCompileRelease UP-TO-DATE
+> Task :sms_autofill:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sms_autofill:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :sms_autofill:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :speech_to_text:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :speech_to_text:preBuild UP-TO-DATE
+> Task :speech_to_text:preReleaseBuild UP-TO-DATE
+> Task :speech_to_text:generateReleaseResValues UP-TO-DATE
+> Task :speech_to_text:generateReleaseResources UP-TO-DATE
+> Task :speech_to_text:packageReleaseResources UP-TO-DATE
+> Task :speech_to_text:parseReleaseLocalResources UP-TO-DATE
+> Task :speech_to_text:generateReleaseRFile UP-TO-DATE
+> Task :speech_to_text:compileReleaseKotlin UP-TO-DATE
+> Task :speech_to_text:javaPreCompileRelease UP-TO-DATE
+> Task :speech_to_text:compileReleaseJavaWithJavac NO-SOURCE
+> Task :speech_to_text:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :speech_to_text:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :sqflite_android:preBuild UP-TO-DATE
+> Task :sqflite_android:preReleaseBuild UP-TO-DATE
+> Task :sqflite_android:generateReleaseResValues UP-TO-DATE
+> Task :sqflite_android:generateReleaseResources UP-TO-DATE
+> Task :sqflite_android:packageReleaseResources UP-TO-DATE
+> Task :sqflite_android:parseReleaseLocalResources UP-TO-DATE
+> Task :sqflite_android:generateReleaseRFile UP-TO-DATE
+> Task :sqflite_android:javaPreCompileRelease UP-TO-DATE
+> Task :sqflite_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :sqflite_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :sqflite_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :url_launcher_android:preBuild UP-TO-DATE
+> Task :url_launcher_android:preReleaseBuild UP-TO-DATE
+> Task :url_launcher_android:generateReleaseBuildConfig UP-TO-DATE
+> Task :url_launcher_android:generateReleaseResValues UP-TO-DATE
+> Task :url_launcher_android:generateReleaseResources UP-TO-DATE
+> Task :url_launcher_android:packageReleaseResources UP-TO-DATE
+> Task :url_launcher_android:parseReleaseLocalResources UP-TO-DATE
+> Task :url_launcher_android:generateReleaseRFile UP-TO-DATE
+> Task :url_launcher_android:javaPreCompileRelease UP-TO-DATE
+> Task :url_launcher_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :url_launcher_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :url_launcher_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :video_player_android:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :video_player_android:preBuild UP-TO-DATE
+> Task :video_player_android:preReleaseBuild UP-TO-DATE
+> Task :video_player_android:generateReleaseResValues UP-TO-DATE
+> Task :video_player_android:generateReleaseResources UP-TO-DATE
+> Task :video_player_android:packageReleaseResources UP-TO-DATE
+> Task :video_player_android:parseReleaseLocalResources UP-TO-DATE
+> Task :video_player_android:generateReleaseRFile UP-TO-DATE
+> Task :video_player_android:compileReleaseKotlin UP-TO-DATE
+> Task :video_player_android:javaPreCompileRelease UP-TO-DATE
+> Task :video_player_android:compileReleaseJavaWithJavac UP-TO-DATE
+> Task :video_player_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :video_player_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :webview_flutter_android:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :webview_flutter_android:exportReleaseConsumerProguardFiles UP-TO-DATE
+> Task :app:buildKotlinToolingMetadata UP-TO-DATE
+> Task :app:compileFlutterBuildRelease UP-TO-DATE
+> Task :app:packJniLibsflutterBuildRelease UP-TO-DATE
+> Task :app:checkReleaseDuplicateClasses UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :cloud_firestore:writeReleaseAarMetadata UP-TO-DATE
+> Task :devicelocale:writeReleaseAarMetadata UP-TO-DATE
+> Task :facebook_app_events:writeReleaseAarMetadata UP-TO-DATE
+> Task :file_picker:writeReleaseAarMetadata UP-TO-DATE
+> Task :firebase_analytics:writeReleaseAarMetadata UP-TO-DATE
+> Task :firebase_auth:writeReleaseAarMetadata UP-TO-DATE
+> Task :firebase_core:writeReleaseAarMetadata UP-TO-DATE
+> Task :firebase_dynamic_links:writeReleaseAarMetadata UP-TO-DATE
+> Task :firebase_messaging:writeReleaseAarMetadata UP-TO-DATE
+> Task :firebase_remote_config:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_branch_sdk:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_facebook_auth:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_inappwebview_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_keyboard_visibility:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_local_notifications:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_native_image:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_native_splash:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_paystack:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:writeReleaseAarMetadata UP-TO-DATE
+> Task :flutter_secure_storage:writeReleaseAarMetadata UP-TO-DATE
+> Task :fluttertoast:writeReleaseAarMetadata UP-TO-DATE
+> Task :geocoding_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :get_thumbnail_video:writeReleaseAarMetadata UP-TO-DATE
+> Task :gms_check:writeReleaseAarMetadata UP-TO-DATE
+> Task :google_maps_flutter_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :google_mobile_ads:writeReleaseAarMetadata UP-TO-DATE
+> Task :google_sign_in_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :image_picker_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :in_app_update:writeReleaseAarMetadata UP-TO-DATE
+> Task :inspireui:writeReleaseAarMetadata UP-TO-DATE
+> Task :libphonenumber_plugin:writeReleaseAarMetadata UP-TO-DATE
+> Task :local_auth_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :location:writeReleaseAarMetadata UP-TO-DATE
+> Task :onesignal_flutter:writeReleaseAarMetadata UP-TO-DATE
+> Task :package_info_plus:writeReleaseAarMetadata UP-TO-DATE
+> Task :path_provider_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :paytm_allinonesdk:writeReleaseAarMetadata UP-TO-DATE
+> Task :permission_handler_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :phonepe_payment_sdk:writeReleaseAarMetadata UP-TO-DATE
+> Task :qr_code_scanner:writeReleaseAarMetadata UP-TO-DATE
+> Task :rate_my_app:writeReleaseAarMetadata UP-TO-DATE
+> Task :razorpay_flutter:writeReleaseAarMetadata UP-TO-DATE
+> Task :rive_common:writeReleaseAarMetadata UP-TO-DATE
+> Task :share_plus:writeReleaseAarMetadata UP-TO-DATE
+> Task :shared_preferences_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :sms_autofill:writeReleaseAarMetadata UP-TO-DATE
+> Task :speech_to_text:writeReleaseAarMetadata UP-TO-DATE
+> Task :sqflite_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :url_launcher_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :video_player_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :wakelock_plus:writeReleaseAarMetadata UP-TO-DATE
+> Task :webview_flutter_android:writeReleaseAarMetadata UP-TO-DATE
+> Task :app:cleanMergeReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseShaders UP-TO-DATE
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :cloud_firestore:mergeReleaseShaders UP-TO-DATE
+> Task :cloud_firestore:compileReleaseShaders NO-SOURCE
+> Task :cloud_firestore:generateReleaseAssets UP-TO-DATE
+> Task :cloud_firestore:packageReleaseAssets UP-TO-DATE
+> Task :devicelocale:mergeReleaseShaders UP-TO-DATE
+> Task :devicelocale:compileReleaseShaders NO-SOURCE
+> Task :devicelocale:generateReleaseAssets UP-TO-DATE
+> Task :devicelocale:packageReleaseAssets UP-TO-DATE
+> Task :facebook_app_events:mergeReleaseShaders UP-TO-DATE
+> Task :facebook_app_events:compileReleaseShaders NO-SOURCE
+> Task :facebook_app_events:generateReleaseAssets UP-TO-DATE
+> Task :facebook_app_events:packageReleaseAssets UP-TO-DATE
+> Task :file_picker:mergeReleaseShaders UP-TO-DATE
+> Task :file_picker:compileReleaseShaders NO-SOURCE
+> Task :file_picker:generateReleaseAssets UP-TO-DATE
+> Task :file_picker:packageReleaseAssets UP-TO-DATE
+> Task :firebase_analytics:mergeReleaseShaders UP-TO-DATE
+> Task :firebase_analytics:compileReleaseShaders NO-SOURCE
+> Task :firebase_analytics:generateReleaseAssets UP-TO-DATE
+> Task :firebase_analytics:packageReleaseAssets UP-TO-DATE
+> Task :firebase_auth:mergeReleaseShaders
+> Task :firebase_auth:compileReleaseShaders NO-SOURCE
+> Task :firebase_auth:generateReleaseAssets UP-TO-DATE
+> Task :firebase_auth:packageReleaseAssets
+> Task :app:checkReleaseAarMetadata FAILED
+> Task :firebase_core:mergeReleaseShaders
+
+FAILURE: Build failed 
+with an exception.
+
+* What went wrong:
+Execution failed for task 
+':app:checkReleaseAarMetad
+ata'.
+> A failure occurred 
+while executing com.androi
+d.build.gradle.internal.ta
+sks.CheckAarMetadataWorkAc
+tion
+   > 2 issues were found 
+when checking AAR 
+metadata:
+     
+       1.  Dependency 'and
+roidx.browser:browser:1.9.
+0' requires libraries and 
+applications that
+           depend on it 
+to compile against 
+version 36 or later of the
+           Android APIs.
+     
+           :app is 
+currently compiled 
+against android-35.
+     
+           Also, the 
+maximum recommended 
+compile SDK version for 
+Android Gradle
+           plugin 8.7.1 
+is 35.
+     
+           Recommended 
+action: Update this 
+project's version of the 
+Android Gradle
+           plugin to one 
+that supports 36, then 
+update this project to use
+           compileSdk of 
+at least 36.
+     
+           Note that 
+updating a library or 
+application's compileSdk 
+(which
+           allows newer 
+APIs to be used) can be 
+done separately from 
+updating
+           targetSdk 
+(which opts the app in to 
+new runtime behavior) and
+           minSdk (which 
+determines which devices 
+the app can be installed
+           on).
+     
+       2.  Dependency 'and
+roidx.browser:browser:1.9.
+0' requires Android 
+Gradle plugin 8.9.1 or 
+higher.
+     
+           This build 
+currently uses Android 
+Gradle plugin 8.7.1.
+
+* Try:
+> Run with --stacktrace 
+option to get the stack 
+trace.
+> Run with --info or 
+--debug option to get 
+more log output.
+> Run with --scan to get 
+full insights.
+> Get more help at 
+https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+567 actionable tasks: 7 executed, 560 up-to-date
+
+BUILD FAILED in 15s
