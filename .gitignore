@@ -61,6 +61,7 @@ windows/CMakeLists.txt.user
 # Local environment
 .env
 *.env
+*.save
 env.props
 local.properties
 key.properties
