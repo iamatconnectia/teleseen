@@ -1,11 +1,20 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 // ignore_for_file: prefer_single_quotes, lines_longer_than_80_chars final
-Map<String, dynamic> environment = {
+String _env(String key, [String defaultValue = '']) {
+  final value = dotenv.env[key];
+  return value == null || value.isEmpty ? defaultValue : value;
+}
+
+final Map<String, dynamic> environment = _buildEnvironment();
+
+Map<String, dynamic> _buildEnvironment() => {
   "appConfig": "lib/config/config_en.json",
   "serverConfig": {
-    "url": "https://ktskw.com",
+    "url": _env('SERVER_URL', 'https://ktskw.com'),
     "type": "woo",
-    "consumerKey": "ck_76a49c0653e384ed40cb805891c0ee4da56e696e",
-    "consumerSecret": "cs_33ddc85f4a73705acfa8b80f97262ee393c82ded"
+    "consumerKey": _env('WOOCOMMERCE_CONSUMER_KEY'),
+    "consumerSecret": _env('WOOCOMMERCE_CONSUMER_SECRET')
   },
   "defaultDarkTheme": false,
   "enableRemoteConfigFirebase": true,
@@ -231,7 +240,7 @@ Map<String, dynamic> environment = {
     "enableRegister": true,
     "requireUsernameWhenRegister": true
   },
-  "oneSignalKey": {"appID": "", "enable": false},
+  "oneSignalKey": {"appID": _env('ONESIGNAL_APP_ID'), "enable": false},
   "onBoardingConfig": {
     "data": [
       {
@@ -397,27 +406,24 @@ Map<String, dynamic> environment = {
     "stripe_v2_google_pay": "assets/icons/payment/google-pay-mark.png"
   },
   "paypalConfig": {
-    "secret":
-        "ECbFREri7NFj64FI_9WzS6A0Az2DqNLrVokBo0ZBu4enHZKMKOvX45v9Y1NBPKFr6QJv2KaSp5vk5A1G",
+    "secret": _env('PAYPAL_SECRET'),
     "enabled": true,
-    "clientId":
-        "ASlpjFreiGp3gggRKo6YzXMyGM6-NwndBAQ707k6z3-WkSSMTPDfEFmNmky6dBX00lik8wKdToWiJj5w",
+    "clientId": _env('PAYPAL_CLIENT_ID'),
     "returnUrl": "com.teleseen.app://paypalpay",
     "nativeMode": false,
     "production": false,
     "paymentMethodId": "paypal"
   },
   "razorpayConfig": {
-    "keyId": "rzp_test_SDo2WKBNQXDk5Y",
+    "keyId": _env('RAZORPAY_KEY_ID'),
     "enabled": true,
-    "keySecret": "RrgfT3oxbJdaeHSzvuzaJRZf",
+    "keySecret": _env('RAZORPAY_KEY_SECRET'),
     "paymentMethodId": "razorpay"
   },
   "mercadoPagoConfig": {
     "enabled": true,
     "production": false,
-    "accessToken":
-        "TEST-5726912977510261-102413-65873095dc5b0a877969b7f6ffcceee4-613803978",
+    "accessToken": _env('MERCADOPAGO_ACCESS_TOKEN'),
     "paymentMethodId": "woo-mercado-pago-basic"
   },
   "payTmConfig": {
@@ -428,8 +434,8 @@ Map<String, dynamic> environment = {
   },
   "payStackConfig": {
     "enabled": true,
-    "publicKey": "pk_test_a1a37615c9ca90dead5dd84dedbb5e476b640a6f",
-    "secretKey": "sk_test_d833fcaa6c02a61a9431d2026046c0517888a4a7",
+    "publicKey": _env('PAYSTACK_PUBLIC_KEY'),
+    "secretKey": _env('PAYSTACK_SECRET_KEY'),
     "production": false,
     "paymentMethodId": "paystack",
     "enableMobileMoney": true,
@@ -437,7 +443,7 @@ Map<String, dynamic> environment = {
   },
   "flutterwaveConfig": {
     "enabled": true,
-    "publicKey": "FLWPUBK_TEST-72b90e0734da8c9e43916adf63cd711e-X",
+    "publicKey": _env('FLUTTERWAVE_PUBLIC_KEY'),
     "production": false,
     "paymentMethodId": "rave"
   },
@@ -449,11 +455,11 @@ Map<String, dynamic> environment = {
   },
   "expressPayConfig": {
     "enabled": true,
-    "merchantId": "merchant.com.inspireui.mstore.flutter",
+    "merchantId": _env('EXPRESSPAY_MERCHANT_ID'),
     "production": false,
-    "merchantKey": "b2be2ffc-c8b9-11ed-82a9-42eb4e39c8ae",
+    "merchantKey": _env('EXPRESSPAY_MERCHANT_KEY'),
     "paymentMethodId": "shahbandrpay",
-    "merchantPassword": "4a00a5fd3c63dd2b743c75746af6ffe2"
+    "merchantPassword": _env('EXPRESSPAY_MERCHANT_PASSWORD')
   },
   "thaiPromptPayConfig": {
     "enabled": false,
@@ -461,8 +467,8 @@ Map<String, dynamic> environment = {
   },
   "phonepeConfig": {
     "enabled": true,
-    "saltKey": "7eb940c6-b785-42e2-98ca-0419ebf5a219",
-    "merchantId": "GANGSTARPGUAT",
+    "saltKey": _env('PHONEPE_SALT_KEY'),
+    "merchantId": _env('PHONEPE_MERCHANT_ID'),
     "production": false,
     "iOSBundleId": "com.inspireui.mstore.flutter",
     "saltKeyIndex": "1",
@@ -477,13 +483,13 @@ Map<String, dynamic> environment = {
     }
   ],
   "afterShip": {
-    "api": "e2e9bae8-ee39-46a9-a084-781d0139274f",
+    "api": _env('AFTERSHIP_API_KEY'),
     "tracking_url": "https://fluxstore.aftership.com"
   },
   "googleApiKey": {
-    "ios": "AIzaSyCgKTFBKcsO3AuYN8hHuU4gzKrxi1T_iiU",
-    "web": "AIzaSyCgKTFBKcsO3AuYN8hHuU4gzKrxi1T_iiU",
-    "android": "AIzaSyCgKTFBKcsO3AuYN8hHuU4gzKrxi1T_iiU"
+    "ios": _env('GOOGLE_API_KEY_IOS'),
+    "web": _env('GOOGLE_API_KEY_WEB'),
+    "android": _env('GOOGLE_API_KEY_ANDROID')
   },
   "productCard": {"defaultImage": "assets/images/no_product_image.png"},
   "productDetail": {
@@ -672,8 +678,7 @@ Map<String, dynamic> environment = {
     "service": "judge",
     "maxImage": 5,
     "judgeConfig": {
-      "apiKey":
-          "8b0d5f99732ec01d6f6b64891166e4fe4ba9634a83fe57e14edda11489da0f7e",
+      "apiKey": _env('JUDGE_REVIEW_API_KEY'),
       "domain": "https://inspireui-mstore.myshopify.com"
     },
     "enableReview": true,

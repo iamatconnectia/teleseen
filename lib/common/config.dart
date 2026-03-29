@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flux_ui/flux_ui.dart';
 
 import '../common/tools.dart';
@@ -35,5 +36,10 @@ part 'config/products.dart';
 part 'config/smartchat.dart';
 part 'config/vendor.dart';
 part 'config/wishlist.dart';
+
+String _configEnv(String key, [String defaultValue = '']) {
+  final value = dotenv.env[key];
+  return value == null || value.isEmpty ? defaultValue : value;
+}
 
 Map get serverConfig => Configurations.serverConfig;

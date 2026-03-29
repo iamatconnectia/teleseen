@@ -3,6 +3,12 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+String _env(String key, [String defaultValue = '']) {
+  final value = dotenv.env[key];
+  return value == null || value.isEmpty ? defaultValue : value;
+}
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -49,8 +55,8 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCgKTFBKcsO3AuYN8hHuU4gzKrxi1T_iiU',
+  static FirebaseOptions get android => FirebaseOptions(
+    apiKey: _env('GOOGLE_API_KEY_ANDROID'),
     appId: '1:700306081623:android:6a684eb32ee0fe3b502012',
     messagingSenderId: '700306081623',
     projectId: 'teleseen-c42d9',
@@ -58,8 +64,8 @@ class DefaultFirebaseOptions {
     storageBucket: 'teleseen-c42d9.firebasestorage.app',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDulK-3CVMO0RN6G7VrX_WzyXJPgEpEQsk',
+  static FirebaseOptions get ios => FirebaseOptions(
+    apiKey: _env('GOOGLE_API_KEY_IOS'),
     appId: '1:700306081623:ios:f57ec9ed00a379c1502012',
     messagingSenderId: '700306081623',
     projectId: 'teleseen-c42d9',

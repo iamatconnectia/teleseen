@@ -312,7 +312,7 @@ class DefaultConfig {
     },
     {
       'title': 'Let\'s Get Started',
-      "logo": "assets/images/app_icon_transparent.png",
+      'logo': 'assets/images/app_icon_transparent.png',
       'desc': 'Good Luck for great beginnings.'
     }
   ];
@@ -497,17 +497,17 @@ class DefaultConfig {
   static Map stripeConfig = {};
   static Map paypalConfig = {};
   static Map paypalExpressConfig = {
-    'username': 'sb-wea3q30917031_api1.business.example.com',
-    'password': '9MN73T4JHTBDY5W7',
-    'signature': 'A-X91d6dvj07IIDTUn5hM8p8w8LxA-5D.cnvNUgufzpxxf1NNZBYh3kq',
+    'username': _configEnv('PAYPAL_EXPRESS_USERNAME'),
+    'password': _configEnv('PAYPAL_EXPRESS_PASSWORD'),
+    'signature': _configEnv('PAYPAL_EXPRESS_SIGNATURE'),
     'paymentAction': 'Sale', //Sale, Order, Authorization,
     'production': false,
     'paymentMethodId': 'paypal_express',
     'enabled': false,
   };
   static Map razorpayConfig = {
-    'keyId': 'rzp_test_SDo2WKBNQXDk5Y',
-    'keySecret': 'RrgfT3oxbJdaeHSzvuzaJRZf',
+    'keyId': _configEnv('RAZORPAY_KEY_ID'),
+    'keySecret': _configEnv('RAZORPAY_KEY_SECRET'),
     'paymentMethodId': 'razorpay',
     'enabled': true
   };
@@ -520,22 +520,21 @@ class DefaultConfig {
   };
   static Map payStackConfig = {
     'paymentMethodId': 'paystack',
-    'publicKey': 'pk_test_a1a37615c9ca90dead5dd84dedbb5e476b640a6f',
-    'secretKey': 'sk_test_d833fcaa6c02a61a9431d2026046c0517888a4a7',
+    'publicKey': _configEnv('PAYSTACK_PUBLIC_KEY'),
+    'secretKey': _configEnv('PAYSTACK_SECRET_KEY'),
     'enableMobileMoney': false,
     'production': false,
     'enabled': false
   };
   static Map flutterwaveConfig = {
     'paymentMethodId': 'rave',
-    'publicKey': 'FLWPUBK_TEST-72b90e0734da8c9e43916adf63cd711e-X',
+    'publicKey': _configEnv('FLUTTERWAVE_PUBLIC_KEY'),
     'production': false,
     'enabled': true
   };
   static Map myFatoorahConfig = {
     'paymentMethodId': 'myfatoorah_v2',
-    'apiToken':
-        'rLtt6JWvbUHDDhsZnfpAhpYk4dxYDQkbcPTyGaKp2TYqQgG7FGZ5Th_WD53Oq8Ebz6A53njUoo1w3pjU1D4vs_ZMqFiz_j0urb_BH9Oq9VZoKFoJEDAbRZepGcQanImyYrry7Kt6MnMdgfG5jn4HngWoRdKduNNyP4kzcp3mRv7x00ahkm9LAK7ZRieg7k1PDAnBIOG3EyVSJ5kK4WLMvYr7sCwHbHcu4A5WwelxYK0GMJy37bNAarSJDFQsJ2ZvJjvMDmfWwDVFEVe_5tOomfVNt6bOg9mexbGjMrnHBnKnZR1vQbBtQieDlQepzTZMuQrSuKn-t5XZM7V6fCW7oP-uXGX-sMOajeX65JOf6XVpk29DP6ro8WTAflCDANC193yof8-f5_EYY-3hXhJj7RBXmizDpneEQDSaSz5sFk0sV5qPcARJ9zGG73vuGFyenjPPmtDtXtpx35A-BVcOSBYVIWe9kndG3nclfefjKEuZ3m4jL9Gg1h2JBvmXSMYiZtp9MR5I6pvbvylU_PP5xJFSjVTIz7IQSjcVGO41npnwIxRXNRxFOdIUHn0tjQ-7LwvEcTXyPsHXcMD8WtgBh-wxR8aKX7WPSsT1O8d8reb2aR7K3rkV3K82K_0OgawImEpwSvp9MNKynEAJQS6ZHe_J_l77652xwPNxMRTMASk1ZsJL',
+    'apiToken': _configEnv('MYFATOORAH_API_TOKEN'),
     'accountCountry': 'KW',
     'production': false,
     'enabled': false
@@ -543,7 +542,7 @@ class DefaultConfig {
   static Map mercadoPagoConfig = {};
   static Map midtransConfig = {
     'paymentMethodId': 'midtrans',
-    'clientKey': 'SB-Mid-client-he8W_FIlvugfA2RD',
+    'clientKey': _configEnv('MIDTRANS_CLIENT_KEY'),
     'enabled': true
   };
   static Map inAppPurchaseConfig = {
@@ -554,15 +553,14 @@ class DefaultConfig {
   };
   static Map xenditConfig = {
     'paymentMethodId': 'xendit',
-    'secretApiKey':
-        'xnd_development_4E9ql5zFiC1BBmhK2r7wr9mNYyyvjLs0fIal00tGuHEj1iEYCu7B7tCUudv3Xe',
+    'secretApiKey': _configEnv('XENDIT_SECRET_API_KEY'),
     'enabled': true
   };
   static Map expressPayConfig = {
     'paymentMethodId': 'expresspay',
-    'merchantKey': 'b2be2ffc-c8b9-11ed-82a9-42eb4e39c8ae',
-    'merchantPassword': '4a00a5fd3c63dd2b743c75746af6ffe2',
-    'merchantId': 'merchant.com.inspireui.mstore.flutter',
+    'merchantKey': _configEnv('EXPRESSPAY_MERCHANT_KEY'),
+    'merchantPassword': _configEnv('EXPRESSPAY_MERCHANT_PASSWORD'),
+    'merchantId': _configEnv('EXPRESSPAY_MERCHANT_ID'),
     'production': false,
     'enabled': true
   };
@@ -579,15 +577,15 @@ class DefaultConfig {
   };
   static Map thawaniConfig = {
     'paymentMethodId': 'thawani',
-    'secretKey': 'rRQ26GcsZzoEhbrP2HZvLYDbn9C9et',
-    'publishableKey': 'HGvTMLDssJghr9tlN9gr4DVYt0qyBy',
+    'secretKey': _configEnv('THAWANI_SECRET_KEY'),
+    'publishableKey': _configEnv('THAWANI_PUBLISHABLE_KEY'),
     'production': false,
     'enabled': true
   };
   static Map phonepeConfig = {
     'paymentMethodIds': ['phonepe'],
-    'merchantId': 'GANGSTARPGUAT',
-    'saltKey': '7eb940c6-b785-42e2-98ca-0419ebf5a219',
+    'merchantId': _configEnv('PHONEPE_MERCHANT_ID'),
+    'saltKey': _configEnv('PHONEPE_SALT_KEY'),
     'saltKeyIndex': '1',
     'androidPackageName': 'com.teleseen.webstore',
     'iOSBundleId': 'com.teleseen.mstore.flutter',
@@ -642,9 +640,9 @@ class DefaultConfig {
   static Map colorOverrideConfig = {};
   static GoogleApiKeyConfig googleApiKey = GoogleApiKeyConfig.fromMap(
     {
-      'android': 'AIzaSyCgKTFBKcsO3AuYN8hHuU4gzKrxi1T_iiU',
-      'ios': 'AIzaSyCgKTFBKcsO3AuYN8hHuU4gzKrxi1T_iiU',
-      'web': 'AIzaSyCgKTFBKcsO3AuYN8hHuU4gzKrxi1T_iiU'
+      'android': _configEnv('GOOGLE_API_KEY_ANDROID'),
+      'ios': _configEnv('GOOGLE_API_KEY_IOS'),
+      'web': _configEnv('GOOGLE_API_KEY_WEB')
     },
   );
 

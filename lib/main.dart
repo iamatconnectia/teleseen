@@ -11,6 +11,7 @@ import 'package:injectable/injectable.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:universal_platform/universal_platform.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 import 'app.dart';
@@ -81,6 +82,7 @@ void main() {
 
   runZonedGuarded(() async {
     WidgetsFlutterBinding.ensureInitialized();
+    await dotenv.load(fileName: '.env');
 
     await PackageInfo.fromPlatform().then((info) {
       print('RUNTIME PACKAGE: ${info.packageName}');
